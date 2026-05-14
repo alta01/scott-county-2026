@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Scott County 2026 Primary Guide</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:#0d1117;color:#e6edf3;font-family:Georgia,'Times New Roman',serif;font-size:15px;line-height:1.6;max-width:480px;margin:0 auto;min-height:100vh;overflow-x:hidden}
+.sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
+header{background:#161b22;border-bottom:1px solid #30363d;padding:11px 16px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:90}
+header h1{font-size:13px;font-weight:bold;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.dbadge{background:#1d4ed8;color:#bfdbfe;font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px;letter-spacing:.07em;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.hero{background:linear-gradient(160deg,#0d1117 0%,#0a1628 60%,#0d1117 100%);padding:24px 16px 20px;border-bottom:1px solid #30363d}
+.hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:.14em;color:#60a5fa;text-transform:uppercase;margin-bottom:8px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.hero h2{font-size:26px;font-weight:bold;line-height:1.15;margin-bottom:3px}
+.hero-sub{color:#8b949e;font-size:13px;margin-bottom:16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.countdown{display:flex;gap:10px}
+.cbox{background:#21262d;border:1px solid #30363d;border-radius:8px;padding:8px 12px;text-align:center;min-width:54px}
+.cnum{font-size:22px;font-weight:bold;line-height:1;color:#60a5fa;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.clabel{font-size:10px;color:#8b949e;text-transform:uppercase;letter-spacing:.08em;margin-top:2px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.notice{background:#1c1600;border:1px solid #78350f;border-radius:10px;margin:14px 16px;padding:13px 14px}
+.notice-head{font-weight:700;font-size:13px;color:#f59e0b;margin-bottom:6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.notice p{font-size:13px;color:#d97706;line-height:1.5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.notice p+p{margin-top:6px}
+.nav-tabs{display:flex;overflow-x:auto;border-bottom:1px solid #30363d;padding:0 16px;scrollbar-width:none;position:sticky;top:45px;z-index:89;background:#0d1117}
+.nav-tabs::-webkit-scrollbar{display:none}
+.nav-tab{flex-shrink:0;padding:10px 13px;font-size:12px;font-weight:600;color:#8b949e;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;user-select:none;-webkit-user-select:none}
+.nav-tab.active{color:#60a5fa;border-bottom-color:#60a5fa}
+.section{padding:16px 16px 6px;display:none}
+.section.active{display:block}
+.sec-title{font-size:18px;font-weight:bold;margin-bottom:4px}
+.sec-sub{font-size:12px;color:#8b949e;margin-bottom:14px;line-height:1.45;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.ccard{background:#161b22;border:1px solid #30363d;border-radius:10px;margin-bottom:10px;overflow:hidden}
+.ccard.top{border-color:#1d4ed8}
+.chead{padding:13px 14px;cursor:pointer;display:flex;align-items:flex-start;gap:10px;user-select:none;-webkit-user-select:none}
+.cavatar{width:38px;height:38px;border-radius:50%;background:#1e3a5f;color:#60a5fa;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.cinfo{flex:1;min-width:0}
+.cname{font-weight:700;font-size:15px;line-height:1.2;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.crole{font-size:12px;color:#8b949e;margin-top:2px;line-height:1.3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.cbadges{display:flex;gap:5px;margin-top:5px;flex-wrap:wrap}
+.badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.b-poll{background:#0c2340;color:#60a5fa}
+.b-front{background:#0f2f0f;color:#4ade80}
+.b-lim{background:#2a2a2a;color:#8b949e}
+.b-local{background:#1a2a10;color:#86efac}
+.chevron{color:#8b949e;font-size:14px;margin-left:auto;flex-shrink:0;margin-top:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;line-height:1;transition:transform .22s}
+.chead.open .chevron{transform:rotate(180deg)}
+.cbody{padding:0 14px 14px;border-top:1px solid #30363d;display:none}
+.cbody.open{display:block}
+.ptitle{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:#8b949e;margin:12px 0 7px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.pitem{display:flex;align-items:flex-start;gap:8px;margin-bottom:6px;font-size:13px;line-height:1.45;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.pdot{width:6px;height:6px;border-radius:50%;background:#3b82f6;flex-shrink:0;margin-top:5px}
+.nopos{font-size:12px;color:#8b949e;font-style:italic;margin-top:10px;padding:9px 10px;background:#21262d;border-radius:6px;line-height:1.45;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.srcnote{font-size:11px;color:#8b949e;margin-top:10px;line-height:1.4;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.hl{color:#4ade80;font-weight:700}
+.lcard{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:13px 14px;margin-bottom:10px}
+.lcard h4{font-weight:700;font-size:14px;margin-bottom:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.lsub{font-size:12px;color:#8b949e;margin-bottom:7px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.lcard p{font-size:13px;color:#c9d1d9;line-height:1.5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.lcard p+p{margin-top:6px}
+.utag{display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;background:#102010;color:#4ade80;letter-spacing:.05em;margin-bottom:7px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.offrow{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid #30363d;gap:10px}
+.offrow:last-of-type{border-bottom:none}
+.offname{font-weight:600;font-size:13px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.offwho{font-size:12px;color:#8b949e;margin-top:1px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.rtag{font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px;background:#3d0000;color:#fca5a5;flex-shrink:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.nov-note{background:#040d1a;border:1px solid #1e3a5f;border-radius:10px;padding:13px 14px;margin-top:14px}
+.nov-note-head{font-weight:700;font-size:13px;color:#60a5fa;margin-bottom:6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.nov-note p{font-size:13px;color:#93c5fd;line-height:1.5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.fab{position:fixed;bottom:20px;right:16px;background:linear-gradient(135deg,#1d4ed8,#7c3aed);color:#fff;border:none;border-radius:28px;padding:13px 20px;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 4px 20px rgba(124,58,237,.45);display:flex;align-items:center;gap:7px;z-index:200;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;-webkit-appearance:none}
+.qoverlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.88);z-index:300;overflow-y:auto;-webkit-overflow-scrolling:touch;display:none}
+.qoverlay.open{display:block}
+.qmodal{background:#0d1117;max-width:480px;width:100%;margin:0 auto;min-height:100vh;padding:20px 16px 80px}
+.qintro{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:70vh;text-align:center;padding:20px 0}
+.qintro-icon{font-size:40px;margin-bottom:14px}
+.qintro h3{font-size:22px;font-weight:bold;margin-bottom:10px}
+.qintro p{font-size:13px;color:#8b949e;line-height:1.55;max-width:300px;margin-bottom:22px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.startbtn{background:linear-gradient(135deg,#1d4ed8,#7c3aed);color:#fff;border:none;border-radius:28px;padding:14px 30px;font-size:15px;font-weight:700;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;-webkit-appearance:none}
+.qscreen{display:none}
+.qscreen.active{display:block}
+.qtopbar{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.qclose{background:#21262d;border:1px solid #30363d;color:#e6edf3;border-radius:50%;width:32px;height:32px;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;line-height:1;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;-webkit-appearance:none}
+.qprogwrap{flex:1;height:4px;background:#21262d;border-radius:2px;overflow:hidden}
+.qprog{height:100%;background:linear-gradient(90deg,#3b82f6,#7c3aed);border-radius:2px;transition:width .3s ease;width:10%}
+.qstep{font-size:12px;color:#8b949e;white-space:nowrap;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.qq{font-size:18px;font-weight:bold;line-height:1.3;margin-bottom:6px}
+.qsub{font-size:12px;color:#8b949e;margin-bottom:16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.qopts{display:flex;flex-direction:column;gap:9px}
+.qopt{background:#161b22;border:1.5px solid #30363d;border-radius:10px;padding:13px 14px;cursor:pointer;font-size:14px;line-height:1.4;color:#e6edf3;text-align:left;width:100%;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;-webkit-appearance:none}
+.qopt.picked{background:#0c2340;border-color:#60a5fa;color:#bfdbfe}
+.qnav{display:flex;gap:10px;margin-top:18px}
+.qback,.qnext{flex:1;padding:13px;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;border:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;-webkit-appearance:none}
+.qback{background:#21262d;color:#8b949e}
+.qnext{background:linear-gradient(135deg,#1d4ed8,#7c3aed);color:#fff}
+.qnext:disabled,.qback:disabled{opacity:.35;cursor:default}
+.qresults{display:none}
+.qresults.active{display:block}
+.rrace{margin-bottom:20px}
+.rrace-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:#8b949e;margin-bottom:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.rrow{margin-bottom:7px}
+.rlabel{display:flex;justify-content:space-between;font-size:13px;margin-bottom:3px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.rlabel strong{font-weight:700}
+.rbarbg{height:7px;background:#21262d;border-radius:4px;overflow:hidden}
+.rbarfill{height:100%;border-radius:4px;background:linear-gradient(90deg,#1d4ed8,#7c3aed);transition:width .55s ease}
+.rbarfill.win{background:linear-gradient(90deg,#059669,#10b981)}
+.rnote{font-size:12px;color:#8b949e;font-style:italic;margin-top:5px;line-height:1.4;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.rdivider{border:none;border-top:1px solid #30363d;margin:14px 0}
+.retrybtn{width:100%;padding:13px;background:#21262d;border:1px solid #30363d;color:#e6edf3;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;margin-top:14px;-webkit-appearance:none}
+.spacer{height:80px}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Scott County 2026 Primary</h1>
+  <div class="dbadge">DEMOCRAT</div>
+</header>
+
+<div class="hero">
+  <div class="hero-eyebrow">Georgetown, KY &bull; May 19, 2026</div>
+  <h2>Your Primary Voter Guide</h2>
+  <div class="hero-sub sans">Registered Democrat &bull; Scott County</div>
+  <div class="countdown">
+    <div class="cbox"><div class="cnum" id="cd-d">--</div><div class="clabel">Days</div></div>
+    <div class="cbox"><div class="cnum" id="cd-h">--</div><div class="clabel">Hrs</div></div>
+    <div class="cbox"><div class="cnum" id="cd-m">--</div><div class="clabel">Min</div></div>
+  </div>
+</div>
+
+<div class="notice">
+  <div class="notice-head">Know Your Ballot</div>
+  <p>Kentucky is a <strong>closed primary</strong> &mdash; you vote only in the Democratic primary. In Scott County, <strong>no local county offices have Democratic candidates</strong> on the primary ballot. Your choices are federal races and nonpartisan local races.</p>
+  <p>Polls open 6 AM &ndash; 6 PM. If in line at 6 PM, you must be allowed to vote.</p>
+</div>
+
+<div class="nav-tabs" id="navTabs">
+  <div class="nav-tab active" id="tab-senate">US Senate</div>
+  <div class="nav-tab" id="tab-house">KY-6 House</div>
+  <div class="nav-tab" id="tab-local">Local</div>
+  <div class="nav-tab" id="tab-noton">Not on Yours</div>
+</div>
+
+<!-- SENATE -->
+<div class="section active" id="sec-senate">
+  <div class="sec-title">U.S. Senate &mdash; Democratic Primary</div>
+  <div class="sec-sub sans">Choose the D nominee to replace retiring Mitch McConnell. 7 candidates. General: Nov 3, 2026. No Democrat has won this Senate seat since 1992.</div>
+
+  <div class="ccard top"><div class="chead" id="hd-B"><div class="cavatar">CB</div><div class="cinfo"><div class="cname">Charles Booker</div><div class="crole">Former KY State Rep &bull; Louisville</div><div class="cbadges"><span class="badge b-poll">36% in polls</span><span class="badge b-front">Front-runner</span></div></div><div class="chevron" id="ch-B">&#9660;</div></div>
+  <div class="cbody" id="bd-B"><div class="ptitle">Policy Positions</div><div class="pitem"><div class="pdot"></div><span>Medicare for All &mdash; healthcare as a human right</span></div><div class="pitem"><div class="pdot"></div><span>Universal childcare and free public university tuition</span></div><div class="pitem"><div class="pdot"></div><span>Federal renter protections and affordable housing investment</span></div><div class="pitem"><div class="pdot"></div><span>Living wage and economic justice for working-class Kentuckians</span></div><div class="pitem"><div class="pdot"></div><span>Founded Hood to the Holler &mdash; urban/rural coalition organizing</span></div><div class="pitem"><div class="pdot"></div><span>Actively oppose all Trump/DOGE cuts to social programs</span></div><div class="ptitle">Background</div><div class="pitem"><div class="pdot"></div><span>KY state rep 2019&ndash;2021. Lost 2020 D Senate primary to McGrath. Won 2022 D primary, lost to Rand Paul 38&ndash;62%.</span></div><div class="pitem"><div class="pdot"></div><span>Former head of Gov. Beshear&rsquo;s Office of Faith-Based &amp; Community Initiatives</span></div><div class="pitem"><div class="pdot"></div><span>Endorsed by Kentuckians for the Commonwealth PAC, former US Rep. John Yarmuth</span></div><div class="srcnote">Source: Emerson/Fox56 poll April 2026; campaign platform; KPR interview May 2026</div></div></div>
+
+  <div class="ccard top"><div class="chead" id="hd-M"><div class="cavatar">AM</div><div class="cinfo"><div class="cname">Amy McGrath</div><div class="crole">Retired Marine Fighter Pilot &bull; <span class="hl">Georgetown, KY</span></div><div class="cbadges"><span class="badge b-poll">18% in polls</span><span class="badge b-local">Your neighbor</span></div></div><div class="chevron" id="ch-M">&#9660;</div></div>
+  <div class="cbody" id="bd-M"><div class="ptitle">Policy Positions</div><div class="pitem"><div class="pdot"></div><span>National security focus &mdash; opposes Trump foreign policy as &ldquo;unhinged&rdquo;</span></div><div class="pitem"><div class="pdot"></div><span>Stop &ldquo;chaotic&rdquo; trade wars hurting KY farmers and businesses</span></div><div class="pitem"><div class="pdot"></div><span>Immigration reform &mdash; &ldquo;tough, fair, and enforceable&rdquo;</span></div><div class="pitem"><div class="pdot"></div><span>First bill: strip Congress of pay during any government shutdown</span></div><div class="pitem"><div class="pdot"></div><span>Consumer protections against utility rate hikes for data centers</span></div><div class="pitem"><div class="pdot"></div><span>Electability argument: says Booker is too far left for Kentucky</span></div><div class="ptitle">Background</div><div class="pitem"><div class="pdot"></div><span>Retired Marine Lt. Col.; one of first women to fly Marine combat missions</span></div><div class="pitem"><div class="pdot"></div><span>2018 KY-6 candidate (lost to Barr). 2020 D Senate nominee (lost to McConnell 38&ndash;58%).</span></div><div class="pitem"><div class="pdot"></div><span>Lives in Georgetown, KY &mdash; same city as your address. Raised $2M+ for this race.</span></div><div class="srcnote">Source: KPR interview May 2026; April KET debate; Paducah Chamber forum April 2026</div></div></div>
+
+  <div class="ccard"><div class="chead" id="hd-PS"><div class="cavatar">PS</div><div class="cinfo"><div class="cname">Pamela Stevenson</div><div class="crole">KY House Minority Leader &bull; Retired Air Force Col.</div><div class="cbadges"><span class="badge b-poll">3% in polls</span></div></div><div class="chevron" id="ch-PS">&#9660;</div></div>
+  <div class="cbody" id="bd-PS"><div class="ptitle">Policy Positions</div><div class="pitem"><div class="pdot"></div><span>Living wage &mdash; workers should be able to afford basic needs</span></div><div class="pitem"><div class="pdot"></div><span>Worker protections that strengthen both employees and the broader economy</span></div><div class="pitem"><div class="pdot"></div><span>Consumer protections against utility/data center rate increases</span></div><div class="pitem"><div class="pdot"></div><span>&ldquo;Faith-centered approach to public service&rdquo;</span></div><div class="ptitle">Background</div><div class="pitem"><div class="pdot"></div><span>KY House Minority Leader since 2025; state rep 43rd district since 2021</span></div><div class="pitem"><div class="pdot"></div><span>Retired Air Force colonel; 2023 Democratic nominee for KY Attorney General</span></div><div class="srcnote">Source: Paducah Chamber forum April 2026; KPR coverage</div></div></div>
+
+  <div class="ccard"><div class="chead" id="hd-DR"><div class="cavatar">DR</div><div class="cinfo"><div class="cname">Dale Romans</div><div class="crole">Horse Trainer &bull; Political Newcomer &bull; Louisville</div><div class="cbadges"><span class="badge b-lim">Single-digit polling</span></div></div><div class="chevron" id="ch-DR">&#9660;</div></div>
+  <div class="cbody" id="bd-DR"><div class="ptitle">Policy Positions</div><div class="pitem"><div class="pdot"></div><span>Lower Medicare eligibility age to 50 (proposed at April KET debate)</span></div><div class="pitem"><div class="pdot"></div><span>Immigration system is &ldquo;broken&rdquo; &mdash; wants practical fixes</span></div><div class="pitem"><div class="pdot"></div><span>Consumer protections against utility/data center rate hikes</span></div><div class="pitem"><div class="pdot"></div><span>Moderate Democrat &mdash; &ldquo;not a politician,&rdquo; rejects party talking points</span></div><div class="ptitle">Background</div><div class="pitem"><div class="pdot"></div><span>Acclaimed horse trainer, $127.6M career earnings; political newcomer</span></div><div class="pitem"><div class="pdot"></div><span>Encouraged to run by Gov. Beshear; raised $832K including ~$250K self-loan</span></div><div class="srcnote">Source: KPR interview; April 2026 KET debate</div></div></div>
+
+  <div class="ccard"><div class="chead" id="hd-LF"><div class="cavatar">LF</div><div class="cinfo"><div class="cname">Logan Forsythe</div><div class="crole">Attorney &bull; Former Secret Service Agent</div><div class="cbadges"><span class="badge b-lim">Limited public profile</span></div></div><div class="chevron" id="ch-LF">&#9660;</div></div>
+  <div class="cbody" id="bd-LF"><div class="nopos">No documented policy positions found in public sources as of May 2026. Background: attorney and former Secret Service agent. Research his campaign website before voting.</div><div class="srcnote">Source: WDRB 2026 candidate list</div></div></div>
+
+  <div class="ccard"><div class="chead" id="hd-OT1"><div class="cavatar">+3</div><div class="cinfo"><div class="cname">3 Additional Candidates</div><div class="crole">Willett &bull; Blanton &bull; Thompson</div><div class="cbadges"><span class="badge b-lim">Limited public profiles</span></div></div><div class="chevron" id="ch-OT1">&#9660;</div></div>
+  <div class="cbody" id="bd-OT1"><div class="pitem"><div class="pdot"></div><span><strong>Joel Willett</strong> &mdash; Former CIA officer. No documented policy platform found.</span></div><div class="pitem" style="margin-top:6px"><div class="pdot"></div><span><strong>Joshua Blanton Sr.</strong> &mdash; Veteran. No documented policy platform found.</span></div><div class="pitem" style="margin-top:6px"><div class="pdot"></div><span><strong>Vincent Anthony Thompson</strong> &mdash; Beef cattle farmer. No documented policy platform found.</span></div><div class="nopos">These three candidates had no documented positions in sources reviewed. Research their campaign websites directly before voting.</div></div></div>
+</div>
+
+<!-- HOUSE -->
+<div class="section" id="sec-house">
+  <div class="sec-title">U.S. House KY-6 &mdash; Democratic Primary</div>
+  <div class="sec-sub sans">Barr vacated this seat to run for Senate. Georgetown is in the 6th District. 7 D candidates. General: Nov 3. Cook Political Report rates this Solid Republican regardless of who wins.</div>
+
+  <div class="ccard top"><div class="chead" id="hd-CS"><div class="cavatar">CS</div><div class="cinfo"><div class="cname">Cherlynn Stevenson</div><div class="crole">Former KY State Rep &bull; Lexington</div><div class="cbadges"><span class="badge b-front">Top fundraiser</span></div></div><div class="chevron" id="ch-CS">&#9660;</div></div>
+  <div class="cbody" id="bd-CS"><div class="ptitle">Policy Positions</div><div class="pitem"><div class="pdot"></div><span>Medicare for All</span></div><div class="pitem"><div class="pdot"></div><span>Women&rsquo;s rights and reproductive healthcare</span></div><div class="pitem"><div class="pdot"></div><span>Consumer protections against data center utility rate increases</span></div><div class="pitem"><div class="pdot"></div><span>Emphasis on legislative experience and &ldquo;winning tough elections&rdquo; in red districts</span></div><div class="ptitle">Background</div><div class="pitem"><div class="pdot"></div><span>Former KY state representative</span></div><div class="pitem"><div class="pdot"></div><span>Endorsed by Lt. Gov. Jacqueline Coleman and former Gov. Paul Patton</span></div><div class="srcnote">Source: KET debate April 2026; Kentucky Lantern May 2026</div></div></div>
+
+  <div class="ccard top"><div class="chead" id="hd-ZD"><div class="cavatar">ZD</div><div class="cinfo"><div class="cname">Zach Dembo</div><div class="crole">Former Federal Prosecutor &bull; Military Veteran</div><div class="cbadges"><span class="badge b-front">Top fundraiser</span></div></div><div class="chevron" id="ch-ZD">&#9660;</div></div>
+  <div class="cbody" id="bd-ZD"><div class="ptitle">Policy Positions</div><div class="pitem"><div class="pdot"></div><span>Rule of law and DOJ accountability &mdash; resigned from DOJ when Trump tried to politicize it</span></div><div class="pitem"><div class="pdot"></div><span>Skeptical of Medicare for All under RFK Jr.&rsquo;s HHS; prefers alternatives not dependent on current administration</span></div><div class="pitem"><div class="pdot"></div><span>Aggressive congressional oversight of the Trump administration</span></div><div class="pitem"><div class="pdot"></div><span>Consumer protections against data center utility rate hikes</span></div><div class="ptitle">Background</div><div class="pitem"><div class="pdot"></div><span>Former federal prosecutor at DOJ; military veteran</span></div><div class="pitem"><div class="pdot"></div><span>Endorsed by Lexington Herald-Leader editorial board and former US Rep. Ben Chandler</span></div><div class="srcnote">Source: KET debate April 2026; Kentucky Lantern May 2026</div></div></div>
+
+  <div class="ccard"><div class="chead" id="hd-DK"><div class="cavatar">DK</div><div class="cinfo"><div class="cname">David Kloiber</div><div class="crole">Former Lexington City Councilman</div><div class="cbadges"><span class="badge b-lim">Single-digit polling</span></div></div><div class="chevron" id="ch-DK">&#9660;</div></div>
+  <div class="cbody" id="bd-DK"><div class="ptitle">Policy Positions</div><div class="pitem"><div class="pdot"></div><span>Medicare for All</span></div><div class="pitem"><div class="pdot"></div><span>Consumer protections against data center utility rate increases</span></div><div class="pitem"><div class="pdot"></div><span>Local government experience as foundation for community-centered policy</span></div><div class="ptitle">Background</div><div class="pitem"><div class="pdot"></div><span>Former Lexington City Councilman</span></div><div class="srcnote">Source: KET debate April 2026</div></div></div>
+
+  <div class="ccard"><div class="chead" id="hd-EP"><div class="cavatar">EP</div><div class="cinfo"><div class="cname">Erin Petrey</div><div class="crole">Sustainability Policy Professional &bull; Lexington</div><div class="cbadges"><span class="badge b-lim">Single-digit polling</span></div></div><div class="chevron" id="ch-EP">&#9660;</div></div>
+  <div class="cbody" id="bd-EP"><div class="ptitle">Policy Positions</div><div class="pitem"><div class="pdot"></div><span>Medicare for All</span></div><div class="pitem"><div class="pdot"></div><span>Environmental and sustainability policy leadership</span></div><div class="pitem"><div class="pdot"></div><span>Consumer protections against data center utility rate increases</span></div><div class="ptitle">Background</div><div class="pitem"><div class="pdot"></div><span>Worked in Washington, D.C. in sustainability and policy roles</span></div><div class="srcnote">Source: KET debate April 2026</div></div></div>
+
+  <div class="ccard"><div class="chead" id="hd-OT2"><div class="cavatar">+3</div><div class="cinfo"><div class="cname">3 Additional Candidates</div><div class="crole">Carroll &bull; Ausbrooks &bull; Edwards</div><div class="cbadges"><span class="badge b-lim">Limited public profiles</span></div></div><div class="chevron" id="ch-OT2">&#9660;</div></div>
+  <div class="cbody" id="bd-OT2"><div class="pitem"><div class="pdot"></div><span><strong>Harvey Carroll Jr.</strong> &mdash; Filed as D candidate. No documented platform found.</span></div><div class="pitem" style="margin-top:6px"><div class="pdot"></div><span><strong>Jimmy Ausbrooks</strong> &mdash; Filed as D candidate. No documented platform found.</span></div><div class="pitem" style="margin-top:6px"><div class="pdot"></div><span><strong>Corey Edwards</strong> &mdash; Filed as D candidate. No documented platform found.</span></div><div class="nopos">Research their campaign websites directly before voting.</div></div></div>
+
+  <div class="lcard" style="margin-top:18px;border-color:#1a3a1a"><div class="utag">AUTO-ADVANCES</div><h4>State House District 62</h4><div class="lsub">KY House of Representatives</div><p><strong>Matthew Marshall (D)</strong> is the sole D filer and auto-advances without appearing on the primary ballot. He faces Republican incumbent Tony Hampton (R) in November. No public policy positions for Marshall found in sources reviewed.</p></div>
+</div>
+
+<!-- LOCAL -->
+<div class="section" id="sec-local">
+  <div class="sec-title">Local Nonpartisan Races</div>
+  <div class="sec-sub sans">Open to ALL voters regardless of party. These appear on your ballot alongside the partisan races.</div>
+
+  <div class="lcard"><div class="utag">LIKELY UNCONTESTED</div><h4>Georgetown Mayor</h4><div class="lsub">Nonpartisan &bull; City of Georgetown</div><p><strong>Burney Jenkins</strong> was the only candidate found in filing records through the January 9, 2026 deadline. If uncontested, this race may not appear on the primary ballot at all.</p><p style="margin-top:6px;color:#8b949e;font-size:12px">No public policy positions documented. Call Scott County Clerk at 502-863-7875 option 5 to confirm ballot status.</p></div>
+
+  <div class="lcard"><h4>Georgetown City Council</h4><div class="lsub">Nonpartisan &bull; Primary narrows field to 16 for November</div><p>Over 22 candidates filed. Known candidates from filing records:</p><div style="margin-top:8px"><div class="pitem"><div class="pdot"></div><span><strong>Connie Tackett</strong> &mdash; Incumbent council member</span></div><div class="pitem"><div class="pdot"></div><span><strong>Tammy Lusby Mitchell</strong> &mdash; Incumbent council member</span></div><div class="pitem"><div class="pdot"></div><span><strong>Michael Crisp</strong> &mdash; Filed November 2025</span></div></div><p style="margin-top:8px;color:#8b949e;font-size:12px">Full list and candidate positions were not available in sources reviewed. Call the Scott County Clerk at 502-863-7875 option 5 or visit scottcountyclerk.ky.gov. Incumbents Todd Stone, Willow Hambrick, and Mark Showalter likely also running.</p></div>
+
+  <div class="lcard"><div class="utag">NONPARTISAN JUDICIAL</div><h4>14th District Judge &mdash; Division 1</h4><div class="lsub">14th Judicial District</div><p><strong>Bolton Bevins</strong> filed. No other candidates found. KY judicial ethics rules prohibit campaigning on policy positions.</p></div>
+
+  <div class="lcard"><div class="utag">NONPARTISAN JUDICIAL</div><h4>14th District Judge &mdash; Division 2</h4><div class="lsub">14th Judicial District</div><p><strong>Sarah Hays Spedding</strong> filed. No other candidates found. Judicial ethics rules restrict policy campaigning.</p></div>
+
+  <div class="lcard"><div class="utag">NONPARTISAN JUDICIAL</div><h4>Court of Appeals &mdash; District 5, Division 1</h4><div class="lsub">Kentucky Court of Appeals (statewide)</div><p><strong>Lucy Ferguson VanMeter</strong> filed. No other candidates found. Judicial ethics rules restrict policy campaigning.</p></div>
+</div>
+
+<!-- NOT ON YOUR BALLOT -->
+<div class="section" id="sec-noton">
+  <div class="sec-title">Not on Your D Primary Ballot</div>
+  <div class="sec-sub sans">These Scott County offices are holding Republican primaries on May 19, but no Democrats filed. You cannot vote in these races. The R primary winner will likely win the office in November unopposed.</div>
+  <div><div class="offrow"><div><div class="offname">Scott County Judge/Executive</div><div class="offwho">Joe Pat Covington (R) &mdash; uncontested R</div></div><div class="rtag">R Only</div></div><div class="offrow"><div><div class="offname">Scott County Attorney</div><div class="offwho">Cam Culbertson (R) &mdash; contested R primary</div></div><div class="rtag">R Only</div></div><div class="offrow"><div><div class="offname">Scott County Clerk</div><div class="offwho">Rebecca Johnson (R) vs. Neryssa Crisp (R)</div></div><div class="rtag">R Only</div></div><div class="offrow"><div><div class="offname">Scott County Sheriff</div><div class="offwho">Jeremy Nettles (R) &mdash; uncontested R</div></div><div class="rtag">R Only</div></div><div class="offrow"><div><div class="offname">Scott County Coroner</div><div class="offwho">Mark Sutton (R) &mdash; uncontested R</div></div><div class="rtag">R Only</div></div><div class="offrow"><div><div class="offname">Property Valuation Admin.</div><div class="offwho">John Burke (R) &mdash; uncontested R</div></div><div class="rtag">R Only</div></div><div class="offrow"><div><div class="offname">Magistrate Districts 2&ndash;6</div><div class="offwho">Jones, Wallace, Johnston, Ellison, Pratt (all R)</div></div><div class="rtag">R Only</div></div><div class="offrow"><div><div class="offname">Constable Districts 1 &amp; 7</div><div class="offwho">Beattie (R), Frye (R)</div></div><div class="rtag">R Only</div></div><div class="offrow"><div><div class="offname">State House 62 (R Primary)</div><div class="offwho">Tony Hampton (R) vs. Chester Palmer (R)</div></div><div class="rtag">R Only</div></div></div>
+  <div class="nov-note"><div class="nov-note-head">November 3, 2026 &mdash; General Election</div><p>Matthew Marshall (D) auto-advances to challenge Tony Hampton (R) in State House 62. All other county R primary winners run in November, most unopposed. Your voice in county offices is in November, not this primary.</p></div>
+</div>
+
+<button class="fab" id="fabBtn">Vote Quiz</button>
+
+<!-- QUIZ OVERLAY -->
+<div class="qoverlay" id="qoverlay">
+  <div class="qmodal">
+    <div class="qintro" id="qintro">
+      <div class="qintro-icon">&#128379;</div>
+      <h3>Find Your Candidates</h3>
+      <p class="sans">Answer 10 questions. We&rsquo;ll match your stated positions to candidates in each race. Scoring uses only publicly documented stances.</p>
+      <button class="startbtn" id="startBtn">Start the Quiz</button>
+    </div>
+    <div class="qscreen" id="qscreen">
+      <div class="qtopbar"><button class="qclose" id="qcloseBtn">&#10005;</button><div class="qprogwrap"><div class="qprog" id="qprog"></div></div><div class="qstep" id="qstep">1 / 10</div></div>
+      <div class="qq" id="qq"></div>
+      <div class="qsub" id="qsub"></div>
+      <div class="qopts" id="qopts"></div>
+      <div class="qnav"><button class="qback" id="qback">&#8592; Back</button><button class="qnext" id="qnext" disabled>Next &#8594;</button></div>
+    </div>
+    <div class="qresults" id="qresults">
+      <div class="qtopbar" style="margin-bottom:14px"><button class="qclose" id="qcloseBtn2">&#10005;</button><h3 style="font-size:17px;font-weight:bold;flex:1;text-align:center">Your Results</h3><div style="width:32px"></div></div>
+      <p class="sans" style="font-size:12px;color:#8b949e;margin-bottom:16px;line-height:1.5">Based on publicly documented positions only. Candidates without public platforms are excluded from scoring.</p>
+      <div id="rcontent"></div>
+      <button class="retrybtn" id="retryBtn">&#8635; Retake Quiz</button>
+    </div>
+  </div>
+</div>
+
+<div class="spacer"></div>
+
+<script>
+(function(){
+"use strict";
+
+// COUNTDOWN
+function tick(){
+  var t=new Date("2026-05-19T06:00:00"),n=new Date(),ms=t-n;
+  if(ms<0)ms=0;
+  document.getElementById("cd-d").textContent=Math.floor(ms/86400000);
+  document.getElementById("cd-h").textContent=Math.floor((ms%86400000)/3600000);
+  document.getElementById("cd-m").textContent=Math.floor((ms%3600000)/60000);
+}
+tick();setInterval(tick,30000);
+
+// NAV TABS
+var TABS=["senate","house","local","noton"];
+TABS.forEach(function(id){
+  var tab=document.getElementById("tab-"+id);
+  if(!tab)return;
+  tab.addEventListener("click",function(){
+    TABS.forEach(function(t){
+      document.getElementById("tab-"+t).classList.remove("active");
+      document.getElementById("sec-"+t).classList.remove("active");
+    });
+    tab.classList.add("active");
+    document.getElementById("sec-"+id).classList.add("active");
+    window.scrollTo(0,0);
+  });
+});
+
+// ACCORDION
+["B","M","PS","DR","LF","OT1","CS","ZD","DK","EP","OT2"].forEach(function(id){
+  var hd=document.getElementById("hd-"+id);
+  var bd=document.getElementById("bd-"+id);
+  if(!hd||!bd)return;
+  hd.addEventListener("click",function(){
+    var o=bd.classList.contains("open");
+    bd.classList.toggle("open",!o);
+    hd.classList.toggle("open",!o);
+  });
+});
+
+// QUIZ DATA
+var QS=[
+  {q:"How would you describe the political change Kentucky needs?",sub:"Affects US Senate matching",
+   opts:[{t:"Bold and transformative — Kentucky needs a real revolution",s:{B:3,M:0,PS:0,DR:0}},
+         {t:"Steadfast and principled — progressive but disciplined",s:{B:1,M:0,PS:2,DR:0}},
+         {t:"Moderate and pragmatic — win what's actually winnable",s:{B:0,M:3,PS:1,DR:1}},
+         {t:"Practical and independent — results over party labels",s:{B:0,M:1,PS:0,DR:3}}]},
+  {q:"What's your top priority for a US Senator?",sub:"Affects US Senate matching",
+   opts:[{t:"Universal healthcare and economic justice for working people",s:{B:3,M:0,PS:1,DR:0}},
+         {t:"National security — standing up to dangerous foreign policy",s:{B:0,M:3,PS:0,DR:0}},
+         {t:"Workers' rights, living wages, and basic economic needs",s:{B:1,M:0,PS:3,DR:0}},
+         {t:"Practical bipartisan policies that can actually pass",s:{B:0,M:1,PS:0,DR:3}}]},
+  {q:"On healthcare reform:",sub:"Affects both Senate and House matching",
+   opts:[{t:"Full Medicare for All — healthcare is a human right",s:{B:3,M:0,PS:1,DR:0,CS:2,DK:2,EP:2,ZD:0}},
+         {t:"Lower Medicare age to 50 and expand the ACA significantly",s:{B:0,M:1,PS:1,DR:3,CS:1,DK:1,EP:1,ZD:1}},
+         {t:"Strengthen existing system, focus on drug prices and costs",s:{B:0,M:2,PS:0,DR:1,CS:0,DK:0,EP:0,ZD:2}},
+         {t:"Market competition reforms to lower costs",s:{B:0,M:1,PS:0,DR:1,CS:0,DK:0,EP:0,ZD:1}}]},
+  {q:"What's your position on immigration?",sub:"Affects US Senate matching",
+   opts:[{t:"Comprehensive reform with clear pathways to citizenship",s:{B:3,M:0,PS:1,DR:0}},
+         {t:"Tough but fair — enforce laws while fixing the broken system",s:{B:0,M:3,PS:0,DR:1}},
+         {t:"Humane policy focused on root economic causes of migration",s:{B:1,M:0,PS:2,DR:0}},
+         {t:"Bipartisan pragmatic fixes, especially for agricultural labor",s:{B:0,M:1,PS:0,DR:3}}]},
+  {q:"What matters most in a Senate candidate for Kentucky?",sub:"Affects US Senate matching",
+   opts:[{t:"Progressive authenticity and grassroots energy",s:{B:3,M:0,PS:0,DR:0}},
+         {t:"Military and national security credentials",s:{B:0,M:3,PS:1,DR:0}},
+         {t:"Electability — someone who can appeal across the aisle",s:{B:0,M:2,PS:1,DR:2}},
+         {t:"Fresh perspective from outside career politics",s:{B:0,M:0,PS:0,DR:3}}]},
+  {q:"On Trump's DOGE cuts and government spending reductions:",sub:"Affects US Senate matching",
+   opts:[{t:"Actively fight all cuts to social programs and healthcare",s:{B:3,M:1,PS:1,DR:0}},
+         {t:"Protect core social services while finding real waste",s:{B:1,M:1,PS:2,DR:1}},
+         {t:"Start with military/Pentagon reform before social programs",s:{B:1,M:2,PS:0,DR:0}},
+         {t:"Evaluate case by case — some cuts may be justified",s:{B:0,M:0,PS:0,DR:3}}]},
+  {q:"For the KY-6 House seat, which background is most valuable?",sub:"Affects US House matching",
+   opts:[{t:"Federal law enforcement and DOJ accountability",s:{ZD:3,CS:0,DK:0,EP:0}},
+         {t:"State legislative experience in a tough red district",s:{ZD:0,CS:3,DK:0,EP:0}},
+         {t:"Local government — city council and community service",s:{ZD:0,CS:0,DK:3,EP:0}},
+         {t:"Policy and sustainability expertise from Washington",s:{ZD:0,CS:0,DK:0,EP:3}}]},
+  {q:"How should a House member approach the Trump administration?",sub:"Affects US House matching",
+   opts:[{t:"Lead aggressive oversight and legal accountability efforts",s:{ZD:3,CS:1,DK:0,EP:0}},
+         {t:"Build coalitions and fight hard in committee",s:{ZD:1,CS:2,DK:2,EP:1}},
+         {t:"Focus on constituent needs above national partisan fights",s:{ZD:0,CS:1,DK:2,EP:2}},
+         {t:"Prioritize long-term structural and environmental policy",s:{ZD:0,CS:0,DK:1,EP:3}}]},
+  {q:"On trade — Trump's tariffs are currently affecting KY farmers:",sub:"Affects US Senate matching",
+   opts:[{t:"Tariffs are hurting KY farmers and businesses — oppose them",s:{B:1,M:3,PS:0,DR:0}},
+         {t:"Some targeted tariffs can protect American manufacturing",s:{B:0,M:0,PS:1,DR:2}},
+         {t:"Invest in domestic workers rather than fighting trade wars",s:{B:2,M:0,PS:2,DR:0}},
+         {t:"Negotiate better deals specifically for Kentucky agriculture",s:{B:0,M:1,PS:0,DR:3}}]},
+  {q:"What does the Kentucky Democratic Party most need right now?",sub:"Affects US Senate matching",
+   opts:[{t:"A candidate who inspires new voters and energizes the base",s:{B:3,M:0,PS:0,DR:0}},
+         {t:"Military credibility to appeal to moderates and independents",s:{B:0,M:3,PS:1,DR:0}},
+         {t:"A proven winner in red-leaning districts",s:{B:0,M:1,PS:3,DR:0}},
+         {t:"A pragmatic outsider who doesn't sound like either party",s:{B:0,M:0,PS:0,DR:3}}]}
+];
+
+var SEN_KEYS=["B","M","PS","DR"];
+var SEN_NAMES={B:"Charles Booker",M:"Amy McGrath",PS:"Pamela Stevenson",DR:"Dale Romans"};
+var HS_KEYS=["ZD","CS","DK","EP"];
+var HS_NAMES={ZD:"Zach Dembo",CS:"Cherlynn Stevenson",DK:"David Kloiber",EP:"Erin Petrey"};
+
+var curQ=0,answers=[],selOpt=null;
+
+var overlay=document.getElementById("qoverlay");
+
+function openQuiz(){overlay.classList.add("open");document.body.style.overflow="hidden";}
+function closeQuiz(){overlay.classList.remove("open");document.body.style.overflow="";}
+
+document.getElementById("fabBtn").addEventListener("click",openQuiz);
+document.getElementById("qcloseBtn").addEventListener("click",closeQuiz);
+document.getElementById("qcloseBtn2").addEventListener("click",closeQuiz);
+
+function beginQuiz(){
+  curQ=0;answers=[];selOpt=null;
+  document.getElementById("qintro").style.display="none";
+  document.getElementById("qresults").classList.remove("active");
+  document.getElementById("qscreen").classList.add("active");
+  renderQ();
+}
+document.getElementById("startBtn").addEventListener("click",beginQuiz);
+document.getElementById("retryBtn").addEventListener("click",beginQuiz);
+
+function renderQ(){
+  var q=QS[curQ];
+  document.getElementById("qq").textContent=q.q;
+  document.getElementById("qsub").textContent=q.sub;
+  document.getElementById("qstep").textContent=(curQ+1)+" / "+QS.length;
+  document.getElementById("qprog").style.width=Math.round((curQ+1)/QS.length*100)+"%";
+  document.getElementById("qback").disabled=(curQ===0);
+  var nxt=document.getElementById("qnext");
+  nxt.disabled=true;
+  selOpt=(answers[curQ]!==undefined)?answers[curQ]:null;
+  var box=document.getElementById("qopts");
+  box.innerHTML="";
+  q.opts.forEach(function(opt,i){
+    var b=document.createElement("button");
+    b.className="qopt"+(selOpt===i?" picked":"");
+    b.textContent=opt.t;
+    (function(idx){
+      b.addEventListener("click",function(){
+        selOpt=idx;
+        box.querySelectorAll(".qopt").forEach(function(el){el.classList.remove("picked");});
+        b.classList.add("picked");
+        document.getElementById("qnext").disabled=false;
+      });
+    })(i);
+    box.appendChild(b);
+  });
+  if(selOpt!==null)nxt.disabled=false;
+}
+
+document.getElementById("qnext").addEventListener("click",function(){
+  if(selOpt===null)return;
+  answers[curQ]=selOpt;
+  if(curQ===QS.length-1){showResults();return;}
+  curQ++;renderQ();
+});
+document.getElementById("qback").addEventListener("click",function(){
+  if(curQ>0){curQ--;renderQ();}
+});
+
+function showResults(){
+  var sc={B:0,M:0,PS:0,DR:0,ZD:0,CS:0,DK:0,EP:0};
+  answers.forEach(function(ans,qi){
+    var s=QS[qi].opts[ans].s;
+    Object.keys(s).forEach(function(k){sc[k]=(sc[k]||0)+s[k];});
+  });
+  var smx=0;SEN_KEYS.forEach(function(k){if(sc[k]>smx)smx=sc[k];});
+  var hmx=0;HS_KEYS.forEach(function(k){if(sc[k]>hmx)hmx=sc[k];});
+  var ss=SEN_KEYS.slice().sort(function(a,b){return sc[b]-sc[a];});
+  var hs=HS_KEYS.slice().sort(function(a,b){return sc[b]-sc[a];});
+  var h="";
+  h+='<div class="rrace"><div class="rrace-title">U.S. Senate — Democratic Primary</div>';
+  ss.forEach(function(k,i){var p=smx>0?Math.round(sc[k]/smx*100):0;h+='<div class="rrow"><div class="rlabel"><strong>'+SEN_NAMES[k]+'</strong><span>'+p+'%</span></div><div class="rbarbg"><div class="rbarfill'+(i===0?' win':'')+'" style="width:'+p+'%"></div></div></div>';});
+  h+='<div class="rnote">Your answers align most with <strong>'+SEN_NAMES[ss[0]]+'</strong> based on documented positions.</div></div>';
+  h+='<hr class="rdivider">';
+  h+='<div class="rrace"><div class="rrace-title">U.S. House KY-6 — Democratic Primary</div>';
+  hs.forEach(function(k,i){var p=hmx>0?Math.round(sc[k]/hmx*100):0;h+='<div class="rrow"><div class="rlabel"><strong>'+HS_NAMES[k]+'</strong><span>'+p+'%</span></div><div class="rbarbg"><div class="rbarfill'+(i===0?' win':'')+'" style="width:'+p+'%"></div></div></div>';});
+  h+='<div class="rnote">Your answers align most with <strong>'+HS_NAMES[hs[0]]+'</strong>. Carroll, Ausbrooks, Edwards excluded (no documented positions).</div></div>';
+  h+='<hr class="rdivider">';
+  h+='<div class="rrace"><div class="rrace-title">Local Nonpartisan Races</div><div class="rnote" style="margin-top:0">Georgetown City Council and Mayor have no documented positions to compare. Call the Scott County Clerk at 502-863-7875 option 5 for the full candidate list.</div></div>';
+  document.getElementById("rcontent").innerHTML=h;
+  document.getElementById("qscreen").classList.remove("active");
+  document.getElementById("qresults").classList.add("active");
+}
+
+})();
+</script>
+</body>
+</html>
